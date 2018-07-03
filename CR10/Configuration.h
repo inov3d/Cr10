@@ -30,8 +30,8 @@
 #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 100, 10000 }
 
 //Invert Steppers
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 #define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
@@ -46,7 +46,7 @@
 //====================================
 #define ENCODER_PULSES_PER_STEP 4
 #define ENCODER_STEPS_PER_MENU_ITEM 1
-#define REVERSE_ENCODER_DIRECTION
+//#define REVERSE_ENCODER_DIRECTION
 //#define REVERSE_MENU_DIRECTION
 //#define SPEAKER
 
@@ -941,7 +941,7 @@
 #define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
-  #define LEVEL_CORNERS_INSET 30    // (mm) An inset for corner leveling
+  #define LEVEL_CORNERS_INSET 5    // (mm) An inset for corner leveling
   //#define LEVEL_CENTER_TOO        // Move to the center after the last corner
 #endif
 
